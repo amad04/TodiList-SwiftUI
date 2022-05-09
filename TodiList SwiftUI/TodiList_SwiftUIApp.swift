@@ -14,7 +14,9 @@ struct TodiList_SwiftUIApp: App {
         WindowGroup {
             NavigationView {
                 ListView()
-            } .environmentObject(listViewModel)
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
+            .environmentObject(listViewModel)
         }
     }
 }
